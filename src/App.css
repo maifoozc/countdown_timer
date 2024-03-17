@@ -1,38 +1,51 @@
+body {
+  background-color: #7ec8ff;
+}
 .App {
   text-align: center;
+  margin-top: 10rem;
+}
+.picker {
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.timerBox {
+  width: 6rem;
+  height: 5rem;
+  margin: 1rem;
+  background-color: #be1866;
+  font-size: 25px;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: 1px solid #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.picker,
+button {
+  background-color: #ce84f0;
+  color: #fff;
+  border-radius: 10px;
+  width: auto;
+  padding: 0.5rem;
+  border: 1px solid #fff;
+}
+.picker{
+  background-color: #bd4839;
+}
+.finished,
+.error {
+  color: #ae00ff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 622px) {
+  .timerBox {
+    width: auto;
+    height: 3rem;
+    margin: 1rem;
+    background-color: #be1866;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #fff;
   }
 }
